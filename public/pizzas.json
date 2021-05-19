@@ -1,0 +1,22 @@
+{
+  "pizzas": [
+    {
+      "img_url": "margherita.jpg",
+      "desc": "Margherita",
+      "category": "Vegetariana",
+      "price": 7.00
+    },
+    {
+      "img_url": "crostino.jpg",
+      "desc": "Crostino",
+      "category": "",
+      "price": 6.50
+    },
+    {
+      "img_url": "funghi_formaggio.jpg",
+      "desc": "Funghi e quattro formaggi",
+      "category": "",
+      "price": 8.00
+    }
+  ]
+}

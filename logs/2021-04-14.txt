@@ -1,0 +1,12 @@
+[14-Apr-2021 06:56:06 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/runner/glovo-php-mvc/public/index.php(31): Core\Router->dispatch('/data')
+#1 {main}
+Thrown in '/home/runner/glovo-php-mvc/Core/Router.php' on line 130
+[14-Apr-2021 06:56:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/runner/glovo-php-mvc/public/index.php(31): Core\Router->dispatch('/data')
+#1 {main}
+Thrown in '/home/runner/glovo-php-mvc/Core/Router.php' on line 130
+[14-Apr-2021 06:57:50 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/runner/glovo-php-mvc/public/index.php(31): Core\Router->dispatch('/data')
+#1 {main}
+Thrown in '/home/runner/glovo-php-mvc/Core/Router.php' on line 130

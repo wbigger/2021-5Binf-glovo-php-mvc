@@ -1,0 +1,80 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Progetto di esempio con il 5Binf 2020/2021",
+    "version": "0.1.0",
+    "title": "Progetto Glovo"
+  },
+  "host": "glovo-php-mvc.ccapobianco.repl.co",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "security": [
+    {
+      "accessCode": [
+        "read",
+        "write"
+      ]
+    }
+  ],
+  "paths": {
+    "/pizzas": {
+      "get": {
+        "summary": "Lista di tutte le pizze disponibili",
+        "description": "Con questa richiesta ottengo la lista delle pizze con la categoria ed il prezzo",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Richiesta OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/inline_response_200"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "accessCode": {
+      "type": "oauth2",
+      "authorizationUrl": "http://example.com/oauth/auth",
+      "tokenUrl": "http://example.com/oauth/token",
+      "flow": "accessCode",
+      "scopes": {
+        "write": "allows modifying resources",
+        "read": "allows reading resources"
+      }
+    }
+  },
+  "definitions": {
+    "inline_response_200": {
+      "type": "object",
+      "properties": {
+        "img_url": {
+          "type": "string",
+          "format": "url",
+          "example": "margherita.jpg"
+        },
+        "desc": {
+          "type": "string",
+          "example": "Margherita"
+        },
+        "category": {
+          "type": "string",
+          "example": "Vegetariana"
+        },
+        "price": {
+          "type": "number",
+          "example": 7
+        }
+      }
+    }
+  }
+}
